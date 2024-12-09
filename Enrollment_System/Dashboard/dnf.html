@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Saint Isidore</title>
+    <link rel="icon" type="image/x-icon" href="/images/logooo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dnf.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-layout">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img 
+                        src="/ENROLLMENT_SYSTEM/images/logooo.png" 
+                        alt="Saint Isidore Logo" 
+                        class="school-logo"
+                    >
+                    <div class="school-info">
+                        <h1 class="school-title">
+                            SAINT ISIDORE CHILDREN SCHOOL
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="student_dashboard.php" href="#" class="nav-link">
+                                <i class="fa-solid fa-square-poll-vertical nav-icon"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="financial.html" href="#" class="nav-link">
+                                <i class="fa-solid fa-stamp nav-icon"></i>
+                                <span class="nav-text">Financial Information</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dnf.html" href="#" class="nav-link">
+                                <i class="fas fa-book nav-icon"></i>
+                                <span class="nav-text">Documents and Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="anounce.html" href="#" class="nav-link">
+                                <i class="fas fa-bullhorn nav-icon"></i>
+                                <span class="nav-text">Announcement and Notifications</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-circle-info nav-icon"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="documents-and-forms">
+                  <div class="documents-and-forms-header">
+                    <h2>Documents and Forms</h2>
+                  </div>
+                  <div class="upload-container">
+                    <h3>Upload Requested Documents</h3>
+                    <input type="file" id="document-upload">
+                    <button onclick="uploadDocument()">Upload</button>
+                  </div>
+                  <div class="pending-documents">
+                    <h3>Documents</h3>
+                    <ul class="document-list">
+                      <li>
+                        <div class="document-name">Form 137</div>
+                        <div class="document-status">Completed</div>
+                      </li>
+                      <li>
+                        <div class="document-name">Record of baptism</div>
+                        <div class="document-status">Completed</div>
+                      </li>
+                      <li>
+                        <div class="document-name">PSA</div>
+                        <div class="document-status">Completed</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            
+              <script>
+                function uploadDocument() {
+                  // Add your document upload logic here
+                  alert('Document uploaded successfully!');
+                }
+              </script>
+        </head>
+        </html>

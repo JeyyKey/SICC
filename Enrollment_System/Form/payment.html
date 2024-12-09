@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINT ISIDORE CHILDREN CENTER Payment Form</title>
+    <link rel="icon" type="image/x-icon" href="/images/LOGO.png">
+    <link rel="stylesheet" href="payment.css">
+   
+
+</head>
+<body>
+    <div class="form-container">
+        <header>
+            <img src="/images/LOGO.png" alt="School Logo" class="logo">
+            <div class="school-info">
+                <h1>SAINT ISIDORE CHILDREN CENTER</h1>
+                <p>Purok 6, Brgy. Punta, Calamba City, 4027</p>
+                <p>Mobile No. 0933-134-2901</p>
+                <div class="form-row" style="position: relative;">
+                    <label for="academicYear">For Academic Year: 2024-2025</label>
+                </div>
+            </div>
+        </header>
+
+        <form>
+            <!-- Student Information -->
+            <div class="student-info">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Last Name,              First Name              M.I." required>
+            </div>
+
+            <!-- Fees Section -->
+            <div class="Nature-fee">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nature of Fee</th>
+                            <th>Amount</th>
+                            <th>OR#</th>
+                            <th>Date</th>
+                            <th>Received By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reservation/Registration</td>
+                            <td><input type="number" name="reservation_amount" placeholder="Enter amount"></td>
+                            <td><input type="text" name="reservation_or" placeholder="Enter OR#"></td>
+                            <td><input type="date" name="reservation_date"></td>
+                            <td><input type="text" name="reservation_received_by" placeholder="Enter name"></td>
+                        </tr>
+                        <tr>
+                            <td>Total Misc. Fee</td>
+                            <td><input type="number" name="misc_fee_amount" placeholder="Enter amount"></td>
+                            <td><input type="text" name="misc_fee_or" placeholder="Enter OR#"></td>
+                            <td><input type="date" name="misc_fee_date"></td>
+                            <td><input type="text" name="misc_fee_received_by" placeholder="Enter name"></td>
+                        </tr>
+                        <tr>
+                            <td>Books</td>
+                            <td><input type="number" name="books_amount" placeholder="Enter amount"></td>
+                            <td><input type="text" name="books_or" placeholder="Enter OR#"></td>
+                            <td><input type="date" name="books_date"></td>
+                            <td><input type="text" name="books_received_by" placeholder="Enter name"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <!-- Monthly Payment Tracking Table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>MONTHS</th>
+                        <th>AMOUNT PAID</th>
+                        <th>OR#</th>
+                        <th>DATE</th>
+                        <th>RECEIVED BY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JULY</td>
+                        <td><input type="number" name="july_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="july_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="july_date"></td>
+                        <td><input type="text" name="july_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>AUGUST</td>
+                        <td><input type="number" name="august_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="august_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="august_date"></td>
+                        <td><input type="text" name="august_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>SEPTEMBER</td>
+                        <td><input type="number" name="september_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="september_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="september_date"></td>
+                        <td><input type="text" name="september_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>OCTOBER</td>
+                        <td><input type="number" name="october_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="october_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="october_date"></td>
+                        <td><input type="text" name="october_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>NOVEMBER</td>
+                        <td><input type="number" name="november_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="november_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="november_date"></td>
+                        <td><input type="text" name="november_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>DECEMBER</td>
+                        <td><input type="number" name="december_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="december_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="december_date"></td>
+                        <td><input type="text" name="december_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>JANUARY</td>
+                        <td><input type="number" name="january_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="january_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="january_date"></td>
+                        <td><input type="text" name="january_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>FEBRUARY</td>
+                        <td><input type="number" name="february_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="february_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="february_date"></td>
+                        <td><input type="text" name="february_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>MARCH</td>
+                        <td><input type="number" name="march_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="march_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="march_date"></td>
+                        <td><input type="text" name="march_received_by" placeholder="Enter name"></td>
+                    </tr>
+                    <tr>
+                        <td>APRIL</td>
+                        <td><input type="number" name="april_amount" placeholder="Enter amount"></td>
+                        <td><input type="text" name="april_or" placeholder="Enter OR#"></td>
+                        <td><input type="date" name="april_date"></td>
+                        <td><input type="text" name="april_received_by" placeholder="Enter name"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </form>
+    </div>
+    <button id="nextbtn">SUBMIT</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="payment.js"></script>
+</body>
+</html>

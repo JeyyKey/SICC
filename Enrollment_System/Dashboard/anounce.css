@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.nav-text {
+    color: white;
+    font-size: 20px;
+}
+
+
+.nav-menu i {
+    color: white;
+}
+/* Dashboard Container */
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.dashboard-layout {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 16rem; /* 64px */
+    background-color: #4f8bc7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-header {
+    padding: 1.5rem;
+}
+
+.school-logo {
+    width: 150px; /* 24px */
+    height: 150px; /* 24px */
+    margin-bottom: -30px;
+    margin-left: 30px;
+    display: block;
+}
+
+.school-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.school-title {
+    font-size: 25px; /* 18px */
+    font-weight: 700;
+    color:white;
+    margin-bottom: 0.5rem;
+}
+
+.school-subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    color:#4f8bc7;
+    margin-left: 299px;
+    margin-top: -230px;
+    margin-bottom: 50px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    margin-top: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #4f8bc7;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #f3f4f6;
+}
+
+.nav-icon {
+    width: 1.5rem;
+}
+
+.nav-text {
+    margin-left: 0.75rem;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 16rem; 
+    flex: 1;
+    padding: 2rem;
+}
+
+.main-content {
+    padding: 2rem;
+    flex-grow: 1;
+    background-color: #f8f9fa;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.announcements-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.announcements-title {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.announcements-container {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.announcement-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.announcement-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.announcement-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.announcement-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.announcement-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.announcement-priority {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.priority-high {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.priority-medium {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.priority-low {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.announcement-content {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.announcement-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.announcement-category {
+    background-color: #e3f2fd;
+    color: #1976d2;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.announcement-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-button {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.action-button:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.filter-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.filter-button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-button.active {
+    background: #1976d2;
+    color: white;
+    border-color: #1976d2;
+}
+
+.filter-button:hover {
+    border-color: #1976d2;
+    color: #1976d2;
+}
+
+.filter-button.active:hover {
+    background: #1565c0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .announcements-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .filter-section {
+        flex-wrap: wrap;
+    }
+}

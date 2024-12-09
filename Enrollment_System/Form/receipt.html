@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINT ISIDORE CHILDREN'S SCHOOL</title>
+    <link rel="icon" type="image/x-icon" href="/images/logooo.png">
+    <link rel="stylesheet" href="/ENROLLMENT_SYSTEM/Form/Form.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+</head>
+<body>
+    
+    <div class="form-container">
+        <h1>SAINT ISIDORE CHILDREN'S SCHOOL</h1>
+        <h2>Payment Section</h2>
+    <!-- Payment section -->
+    <form action="receipt.php" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Payment</legend>
+            <div class="Nature-fee">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nature of Fee</th>
+                            <th>Amount</th>
+                            <th>OR#</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Reservation/Registration</td>
+                            <td><input type="number" name="reservation_amount" placeholder="Enter amount" required></td>
+                            <td><input type="text" name="reservation_or" placeholder="Enter OR#" required></td>
+                            <td><input type="date" name="reservation_date" required></td>
+                        </tr>
+                        <tr>
+                            <td>Total Misc. Fee</td>
+                            <td><input type="number" name="misc_fee_amount" placeholder="Enter amount" required></td>
+                            <td><input type="text" name="misc_fee_or" placeholder="Enter OR#" required></td>
+                            <td><input type="date" name="misc_fee_date" required></td>
+                        </tr>
+                        <tr>
+                            <td>Books</td>
+                            <td><input type="number" name="books_amount" placeholder="Enter amount" required></td>
+                            <td><input type="text" name="books_or" placeholder="Enter OR#" required></td>
+                            <td><input type="date" name="books_date" required></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-row">
+                <label for="imageAttachment">Proof of Payment:</label>
+                <input type="file" id="imageAttachment" name="imageAttachment" accept="image/*">
+            </div>
+            <div class="form-row">
+                <label for="transactionNumber">Transaction Number:</label>
+                <input type="text" id="transactionNumber" name="transactionNumber" required>
+                <label for="amount">Enter Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+
+            <div class="form-row">
+                <input type="radio" id="Downpayment" name="Payment" value="Downpayment" required>
+                <label for="Downpayment">Downpayment</label>
+                <input type="radio" id="Fullpayment" name="Payment" value="Fullpayment">
+                <label for="Fullpayment">Full Payment</label>
+            </div>
+            <br><br>
+
+            <div class="form-row">
+                <label>
+                    <input type="checkbox" name="terms" required>
+                    I have read and agree to the <a href="terms-and-conditions.html" target="_blank">terms and conditions</a>.
+                    </label>
+                <button type="submit" id="next-btn">SUBMIT</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+    <script src="/Form/receipt.js"></script>
+</body>
+</html>

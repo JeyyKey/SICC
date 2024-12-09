@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINT ISIDORE CHILDREN'S SCHOOL</title>
+    <link rel="icon" type="image/x-icon" href="/images/logooo.png">
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>SAINT ISIDORE CHILDREN'S SCHOOL</h1>
+        <h2>Documents and Forms</h2>
+        <!-- Attachments Section -->
+        <form id="documentsForm" action="documentsforms.php" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Documents and Forms</legend>
+                <div class="form-row">
+                    <label for="photo">2x2 Picture:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+                <div class="form-row">
+                    <label for="form137">Scanned Form 137 (pdf):</label>
+                    <input type="file" id="form137" name="form137" accept=".pdf, image/*" required>
+                </div>
+                <div class="form-row">
+                    <label for="reportCard">Scanned Report Card (pdf):</label>
+                    <input type="file" id="reportCard" name="reportCard" accept=".pdf, image/*" required>
+                </div>
+            </fieldset>
+            <!-- Note -->
+            <div class="form-row" style="text-align: center; margin-top: 20px; color: #333;">
+                <small><strong>Note:</strong> Form 137 and report card must be submitted in person at the school office.</small>
+            </div>
+            <div class="form-row">
+                <button type="submit" id="next-btn">NEXT</button>
+            </div>
+        </form>
+    </div>
+    <script src="/Form/documentsforms.js"></script>
+</body>
+</html>

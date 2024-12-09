@@ -1,0 +1,282 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.dashboard-layout {
+    display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 16rem; /* 64px */
+    background-color: #4f8bc7;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar-header {
+    padding: 1.5rem;
+}
+
+.school-logo {
+    width: 150px; /* 24px */
+    height: 150px; /* 24px */
+    margin-bottom: -30px;
+    margin-left: 30px;
+    display: block;
+}
+
+.school-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.school-title {
+    font-size: 25px; /* 18px */
+    font-weight: 700;
+    color:white;
+    margin-bottom: 0.5rem;
+}
+
+.school-subtitle {
+    font-size: 30px;
+    font-weight: 600;
+    color:#4f8bc7;
+    margin-left: 299px;
+    margin-top: -230px;
+    margin-bottom: 50px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    margin-top: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    margin-bottom: 0.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #f3f4f6;
+}
+
+.nav-icon {
+    width: 1.5rem;
+}
+
+.nav-text {
+    margin-left: 0.75rem;
+}
+
+
+/* Main Content Area */
+.main-content {
+    margin-left: 16rem; /* Same as sidebar width */
+    flex: 1;
+    padding: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .dashboard-layout {
+        flex-direction: column;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Keep all previous sidebar styles */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: #4f8bc7;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Enrollment Status Container */
+.enrollment-status-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 1500px;
+    height: 900px;
+}
+
+.enrollment-status-container .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.enrollment-status-container .card-title {
+    font-size: 28px;
+    color: #4f8bc7;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.enrollment-status-container .card-content {
+    font-size: 20px;
+    margin-top: 100px;
+    
+}
+
+.enrollment-status-container .card-content div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.enrollment-status-container .card-content span.value {
+    font-weight: 500;
+}
+
+/* Main container to center content on the page */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #f2f5f9;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for the enrollment status card */
+.enrollment-status-container {
+    width: 1500px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.enrollment-status-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Header styling */
+.card-header {
+    background: linear-gradient(165deg, #ffffff, #4f8bc7);
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.card-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+
+/* Content styling */
+.card-content {
+    padding: 25px 30px;
+}
+
+/* Each row in the content */
+.card-content div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Remove border from last item */
+.card-content div:last-child {
+    border-bottom: none;
+}
+
+/* Text styling */
+.card-content span {
+    font-size: 16px;
+    color: #666;
+}
+
+.value {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .enrollment-status-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-content span {
+        font-size: 14px;
+    }
+}

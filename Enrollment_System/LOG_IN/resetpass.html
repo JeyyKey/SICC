@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAINT ISIDORE CHILDREN SCHOOL - Reset Password</title>
+    <link rel="icon" type="image/x-icon" href="/images/LOGO.png">
+    <link rel="stylesheet" href="reset_password.css">
+    <script>
+        function validatePassword() {
+            const email = document.getElementById('Email').value;
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (newPassword !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (!passwordPattern.test(newPassword)) {
+                alert("Password must be at least 8 characters long, contain at least one number and one special character.");
+                return false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            return true;
+        }
+
+        function togglePasswordVisibility(inputId, toggleId) {
+            const passwordInput = document.getElementById(inputId);
+            const toggleIcon = document.getElementById(toggleId);
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.textContent = "Hide";
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.textContent = "Show";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Edit Password Section -->
+        <div class="edit-password-section">
+            <h1>Reset Your Password</h1>
+            <p>Enter a new password for your account.</p>
+            <form action="update_password.php" method="POST" onsubmit="return validatePassword()">
+                
+                <!-- Email -->
+                <label for="Email"><strong>Enter your Email</strong></label><br>
+                <input type="email" id="Email" name="Email" required><br><br>
+
+                <!-- New Password -->
+                <label for="new-password"><strong>New Password</strong></label><br>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="button" id="toggle-new-password" onclick="togglePasswordVisibility('new-password', 'toggle-new-password')">Show</button><br><br>
+                
+                <!-- Confirm New Password -->
+                <label for="confirm-password"><strong>Confirm New Password</strong></label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="button" id="toggle-confirm-password" onclick="togglePasswordVisibility('confirm-password', 'toggle-confirm-password')">Show</button><br><br>
+                
+                <!-- Submit Button to Update Password -->
+                <input type="submit" value="Update Password">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

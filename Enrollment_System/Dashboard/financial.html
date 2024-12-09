@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Saint Isidore</title>
+    <link rel="icon" type="image/x-icon" href="/images/logooo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="financial.css">
+   
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-layout">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <img 
+                        src="/ENROLLMENT_SYSTEM/images/logooo.png" 
+                        alt="Saint Isidore Logo" 
+                        class="school-logo"
+                    >
+                    <div class="school-info">
+                        <h1 class="school-title">
+                            SAINT ISIDORE CHILDREN SCHOOL
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Navigation Menu -->
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="student_dashboard.php" href="#" class="nav-link">
+                                <i class="fa-solid fa-square-poll-vertical nav-icon"></i>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="financial.html" href="#" class="nav-link">
+                                <i class="fa-solid fa-stamp nav-icon"></i>
+                                <span class="nav-text">Financial Information</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dnf.html" href="#" class="nav-link">
+                                <i class="fas fa-book nav-icon"></i>
+                                <span class="nav-text">Documents and Forms</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="anounce.html" class="nav-link">
+                                <i class="fas fa-bullhorn nav-icon"></i>
+                                <span class="nav-text">Announcement and Notifications</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link">
+                                <i class="fa-solid fa-circle-info nav-icon"></i>
+                                <span class="nav-text">About</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="main-content">
+                <div class="financial-summary">
+                    <div class="financial-header">
+                        <h2><i class="fas fa-chart-pie"></i> Financial Overview</h2>
+                        <select class="date-selector">
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+
+                    <div class="summary-cards">
+                        <div class="summary-card">
+                            <i class="fas fa-wallet"></i>
+                            <h4>Total Balance</h4>
+                            <p>₱15,000.00</p>
+                            <h4 class="ps">Payment Status</h4>
+                            <p class="sp">On Time</p>
+                        </div>
+                        <div class="summary-card">
+                            <i class="fas fa-calendar-check"></i>
+                            <h4>Next Payment Due</h4>
+                            <p>Dec 15, 2024</p>
+                        </div>
+                    </div>
+
+                    <div class="balance-cards-container">
+                        <div class="balance-card">
+                            <h3>Current Balance</h3>
+                            <h1>₱15,000.00</h1>
+                            <p>Due Date: December 15, 2024</p>
+                            <button class="action-button">
+                                <i class="fas fa-credit-card"></i> Make Payment
+                            </button>
+                        </div>
+                        <div class="balance-card" style="background: linear-gradient(135deg, #2ecc71, #27ae60);">
+                            <h3>Previous Balance</h3>
+                            <h1>₱0.00</h1>
+                            <p>Last Payment: November 1, 2024</p>
+                            <a href="/Dashboard/prevhistory.html"  button class="action-button">
+                                <i class="fas fa-history"></i> View History
+                            </button>
+                        </div>
+                    </div>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDFs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .download-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .download-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-item a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .download-item a:hover {
+            text-decoration: underline;
+        }
+
+        .download-item button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .download-item button:hover {
+            background-color: #45a049;
+        }
+        .logout-btn {
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 45%;
+}
+
+.logout-btn:hover {
+    opacity: 0.9;
+}
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Download Your PDFs</h1>
+        <ul class="download-list">
+            <li class="download-item">
+                <span>Sample PDF 1</span>
+                    <button id="download-pdf-btn">Download</button>
+                </a>
+        </ul>
+        <section class="logout">
+            <a href="/LOG_IN/loginpage.html" class="logout-btn"><i class="fas fa-sign-out-alt"></i> GO BACK</a>
+        </section>
+
+    </div>
+
+
+    <script src="/Form/files.js"></script>
+
+</body>
+</html>
